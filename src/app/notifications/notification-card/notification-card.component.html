@@ -1,0 +1,9 @@
+<p class="card-time">{{ notification.created_at | timeAgo }}</p>
+<task-assigned-notification-card *ngIf="notification.type == NotificationType.TASK_ASSIGNED"  [notification]="notification" [task]="notification.resource">
+</task-assigned-notification-card>
+
+<reminder-notification-card *ngIf="notification.type == NotificationType.REMINDER"  [notification]="notification" [reminder]="notification.resource">
+</reminder-notification-card>
+
+<questionnaire-notification-card *ngIf="notification.type == NotificationType.QUESTIONNAIRE_COMPLETED"  [notification]="notification" [questionnaire]="notification.resource">
+</questionnaire-notification-card>
