@@ -12,8 +12,4 @@ export class Questionnaire {
 		// Proper path can ber given later
 		this.path = '#';
 	}
-	
-	static get count():number {
-		return 56;
-	}
 }

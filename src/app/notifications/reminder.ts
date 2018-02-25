@@ -7,8 +7,4 @@ export class Reminder {
 		this.text = text;
 		this.remind_at = remind_at;
 	}
-
-	static get count():number {
-		return 4;
-	}
 }

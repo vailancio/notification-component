@@ -9,8 +9,4 @@ export class Notification {
 		this.resource = resource;
 		this.created_at = new Date();
 	}
-
-	static get count(): number{
-		return 20;
-	}
 }
