@@ -12,7 +12,7 @@ import { NotificationCardComponent } from './notification-card/notification-card
 export class NotificationsComponent implements OnInit {
   notifications: Notification[];
   private _assignedTaskCount: number = 0;
-  private _remindersCount: numbe = 0;
+  private _remindersCount: number = 0;
   private _generalNotificationsCount: number = 0;
 
   @Output() onAssignedTaskCountChange = new EventEmitter<number>();
