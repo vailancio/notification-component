@@ -1,12 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { TimeAgoPipe } from 'time-ago-pipe';
-//import { NotificationsModule } from './notifications/notifications.module';
+import { NotificationsModule } from './notifications/notifications.module';
 
 import { AppComponent } from './app.component';
 
-
-import { NotificationService } from './notifications/notification.service';
+//import { NotificationService } from './notifications/notification.service';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { NotificationCardComponent } from './notifications/notification-card/notification-card.component';
 
@@ -26,9 +25,9 @@ import { ReminderNotificationCardComponent } from './notifications/reminder-noti
   ],
   imports: [
     BrowserModule, 
-    //NotificationsModule
+    NotificationsModule
   ],
-  providers: [NotificationService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
