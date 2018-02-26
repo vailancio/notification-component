@@ -4,7 +4,11 @@ Run `npm install`
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+![Alt text](https://raw.github.com/vailancio/notification-component/blob/master/src/assets/screenshot.png?raw=true "Screenshot")
+
 ## Build
+
+https://github.com
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
