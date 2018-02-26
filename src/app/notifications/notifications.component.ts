@@ -35,6 +35,10 @@ export class NotificationsComponent implements OnInit {
   	this.notificationService.loadData();
   	this.notifications = this.notificationService.notifications;
 
+    for (var i = this.notifications.length - 1; i >= 0; i--) {
+        this.onNotificationReceived(this.notifications[i]);
+    }
+
     // this.notificationService.connect()
  
     // this.socketSubscription = this.notificationService.messages.subscribe((message: string) => {
