@@ -12,12 +12,4 @@ import { NotificationType } from '../notification';
 export class NotificationCardComponent implements OnInit {
   @Input() notification: Notification;
   NotificationType = NotificationType;
-  constructor() { 
- 		
-  }
-
-  ngOnInit() {
-  	//console.log(NotificationType.TASK_ASSIGNED);
-  }
-
 }

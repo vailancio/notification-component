@@ -1,4 +1,5 @@
 <p class="card-time">{{ notification.created_at | timeAgo }}</p>
+<!-- <span class="button-close" (click)="remove(index)">x</span> -->
 <task-assigned-notification-card *ngIf="notification.type == NotificationType.TASK_ASSIGNED"  [notification]="notification" [task]="notification.resource">
 </task-assigned-notification-card>
 

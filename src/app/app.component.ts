@@ -12,6 +12,7 @@ export class AppComponent {
   private _assignedTaskCount = 0;
   private _reminderCount:number = 0;
   private _notificationCount = 0;
+  private _showNotifications = false;
 
   constructor(){
   	
@@ -29,4 +30,15 @@ export class AppComponent {
      this._notificationCount = count;
   }
 
+  showNotifications(){
+    this._showNotifications = true;
+  }
+
+  hideNotifications(){
+    this._showNotifications = false;
+  }
+
+  toggleNotifications(){
+    this._showNotifications = !this._showNotifications;
+  }
 }

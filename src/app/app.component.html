@@ -1,13 +1,24 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
+<div class="container">
+  <div class="row">
+  	<div class="date">
       {{ _todaysDate | date:'fullDate'}}
-  </h1>
-    {{ _assignedTaskCount }} Assigned Tasks
-    {{ _reminderCount }} Reminders
-    {{ _notificationCount }} Notifications
-    My Workspace
+	</div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      	<div class="stats">
+		    <p><span>{{ _assignedTaskCount }}</span> Assigned Tasks</p>
+		    <p><span>{{ _reminderCount }}</span> Reminders</p>
+		    <p><span>{{ _notificationCount }}</span> Notifications</p>
+		</div>
+    </div>
+    <div class="col-sm">
+      <div class="header">	
+     	 <a class="toggle-link" alt="Show Notifications" *ngIf="!_showNotifications" (click)="showNotifications()">Notifications ></a>
+		<a class="toggle-link" alt="Show my workspace" *ngIf="_showNotifications" (click)="hideNotifications()">My Workspace ></a>
+		</div>
+      <notifications [style.display] = "_showNotifications ? 'block' : 'none'" (onAssignedTaskCountChange)="onAssignedTaskCountChange($event)" (onReminderCountChange)="onReminderCountChange($event)" (onGeneralNotificationCountChange)="onGeneralNotificationCountChange($event)">
+	  </notifications>
+    </div>
+  </div>
 </div>
-<notifications (onAssignedTaskCountChange)="onAssignedTaskCountChange($event)" (onReminderCountChange)="onReminderCountChange($event)" (onGeneralNotificationCountChange)="onGeneralNotificationCountChange($event)">
-	
-</notifications>

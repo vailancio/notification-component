@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter} from '@angular/core';
+import { NgStyle } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { Subscription } from 'rxjs/Subscription';
 import { NotificationService } from './notification.service';
@@ -35,8 +36,8 @@ export class NotificationsComponent implements OnInit {
   	this.notificationService.loadData();
   	this.notifications = this.notificationService.notifications;
 
-    for (var i = this.notifications.length - 1; i >= 0; i--) {
-        this.onNotificationReceived(this.notifications[i]);
+    for (var f = this.notifications.length - 1; f >= 0; f--) {
+        this.onNotificationReceived(this.notifications[f]);
     }
 
     // this.notificationService.connect()
@@ -57,7 +58,7 @@ export class NotificationsComponent implements OnInit {
 
    
     //Mocking websocket data
-    let  i = 0;
+    let i = 0;
     let scope = this;
     let timer = setInterval(function(){
         i++;
@@ -65,7 +66,11 @@ export class NotificationsComponent implements OnInit {
         if(i > 100){
           clearInterval(timer);
         }
-    }, 3000);
+    }, 10000);
+  }
+
+  remove(index){
+    alert(index);
   }
 
   onNotificationReceived(notification: Notification){

@@ -1,0 +1,46 @@
+.date{
+	border-bottom:1px solid rgb(203,203,203);
+	padding:20px 10px;
+	width:100%;
+	font-size:20px;
+	color:rgba(130,130,130,0.8);
+}
+.stats{
+	padding:20px 40px;
+	p{
+		font-size:18px;
+		text-align:center;
+		color: #737373;
+	}
+
+	span{
+		color:rgb(137,183,223);
+		font-size: 20px;
+		font-weight: 400;
+	}
+
+}
+
+.header{
+	display:block;
+	width:100%;
+
+	@media only screen and (min-width : 768px) {
+		    position: absolute;
+    		right: -30px;
+    		top: -50px;
+    }
+
+	a.toggle-link{
+		cursor: pointer;
+		display: block;
+	    width: auto;
+	    float: none;
+	    position: relative;
+	    padding: 10px 5px;
+	    text-align: center;
+	    color: #89b7df;
+	    font-size: 18px;
+	    font-weight: 500;
+	}
+}
