@@ -4,7 +4,7 @@ Run `npm install`
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-![Alt text](https://raw.github.com/vailancio/notification-component/blob/master/src/assets/screenshot.png?raw=true "Screenshot")
+![Alt text](/../master/src/assets/screenshot.png?raw=true "Screenshot")
 
 ## Build
 
