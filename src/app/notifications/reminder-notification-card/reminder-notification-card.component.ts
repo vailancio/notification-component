@@ -10,4 +10,6 @@ import { Notification } from '../notification';
 export class ReminderNotificationCardComponent implements OnInit {
 	@Input() reminder:Reminder;
   	@Input() notification:Notification;
+  	ngOnInit() {	
+	}
 }

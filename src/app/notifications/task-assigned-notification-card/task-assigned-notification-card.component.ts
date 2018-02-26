@@ -10,5 +10,6 @@ import { Notification } from '../notification';
 export class TaskAssignedNotificationCardComponent implements OnInit {
   @Input() notification:Notification;
   @Input() task:Task;
-
+  ngOnInit() {	
+  }
 }
