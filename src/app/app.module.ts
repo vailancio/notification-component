@@ -12,6 +12,7 @@ import { NotificationCardComponent } from './notifications/notification-card/not
 import { TaskAssignedNotificationCardComponent } from './notifications/task-assigned-notification-card/task-assigned-notification-card.component';
 import { QuestionnaireNotificationCardComponent } from './notifications/questionnaire-notification-card/questionnaire-notification-card.component';
 import { ReminderNotificationCardComponent } from './notifications/reminder-notification-card/reminder-notification-card.component';
+import { OrderByDatePipe } from './notifications/order-by-date.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ReminderNotificationCardComponent } from './notifications/reminder-noti
     NotificationCardComponent,
     TaskAssignedNotificationCardComponent,
     ReminderNotificationCardComponent,
-    QuestionnaireNotificationCardComponent
+    QuestionnaireNotificationCardComponent,
+    OrderByDatePipe
   ],
   imports: [
     BrowserModule, 
